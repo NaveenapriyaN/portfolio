@@ -269,7 +269,7 @@ span {
   box-shadow: 5px 5px 7px rgba(14, 42, 55, 0.15);
 }
 .services-box:hover{
-  color: #e0e0e0;
+  color: #ffffff;
 
   box-shadow: 5px 5px 7px rgba(14, 42, 55, 0.15);
   /* background-image: linear-gradient(rgb(169, 169, 169) , rgb(255, 255, 255)); */
@@ -277,7 +277,7 @@ span {
   background-color: #74EBD5;
   background-color: #FF9A8B;
   /* background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); */
-  background-color: #7791a3;
+  background-color: #ffffff;
 
 
 
@@ -839,3 +839,42 @@ html, body {
   padding: 3rem;
   text-align: center;
 }
+
+/* nev bar hover underline css  */
+/* Add the following CSS to your stylesheet */
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  /* Set your default text color */
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #243971; /* Set your hover text color */
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #243971; /* Set your underline color */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+
+/* section extre css */
