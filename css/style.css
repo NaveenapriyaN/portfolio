@@ -160,9 +160,13 @@ header.shadow {
   border-radius: 0.5rem;
 }
 .about-text p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   font-size: var(--p-font);
   font-weight: 400;
   text-align: justify;
+  
 }
 .information {
   margin: 1rem 0 1.4rem;
@@ -514,6 +518,9 @@ form textarea {
 
 .skills-wrapper{
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin:6rem 0rem 4rem 0rem;
 }
